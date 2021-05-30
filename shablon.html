@@ -6,7 +6,7 @@
   <meta name=viewport content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/main.css" /> 
   <link id="link_chcolor" rel="stylesheet" type="text/css" href="css/color_grey.css" /> 
-  <title> Shablon 2020 site! на GitHub OlegTripolskiy</title>
+  <title>PostgreSQL2021</title>
   <!--  ПОДКЛЮЧЕНИЕ БИБЛИОТЕКИ Highligt.JS  -->
 <!--  <link rel="stylesheet" href="css/higligt_dark.css">-->
   <link rel="stylesheet" href="css/higligt_gml.css">
@@ -24,22 +24,22 @@
       <!--  Блок управления сайтом   -->
       <div id="site-control">
         <div id="transctiption"> <!--  Блок транскрипции и смены бокового меню   -->
-            <!--   ВНИМАНИЕ к идентфикатору tir - к нему привязан JS обработчик показа-непоказа транскрипции  -->
-            <input type="checkbox" id="tir" checked="checked">Транскрипция<br>
-            <div id="left-right">
-              <input type="radio" name='sd-place' id="left" checked="checked">&lt;&lt; Меню &gt;&gt;
-              <input type="radio" name='sd-place' id="right">
+
+            <div >
             </div>
-        </div>
         <!-- ТАБЛИЦА ВЫБОР цвета сайта -->
         <table class="color_scheme">
-          <tr><th colspan="3">Выбор цвета сайта:</th></tr>
+          <tr><th id="left-right" colspan="3">
+              <input type="radio" name='sd-place' id="left" checked="checked">&lt;&lt; Меню &gt;&gt;
+              <input type="radio" name='sd-place' id="right">
+          </th></tr>
           <tr> <!-- Строка с цветными прямоугольниками для выбор   а цвета сайта -->
             <td id="color_grey">&nbsp;</td>
             <td id="color_brown">&nbsp;</td>
             <td id="color_night">&nbsp;</td>
           </tr>
         </table> <!-- Конец выбора цвета сайта -->
+        </div>
       </div>
     </header> <!-- Конец ЗАГОЛОВКА   -->
     
