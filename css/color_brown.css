@@ -17,10 +17,7 @@ header h1 { /* --- Стили логотипа */
   border: 1px solid #5E5E5E;
   background-color: white; /* Задает цвет всему блоку */
 }
-#transctiption {  /* --- блок показа транскрипций */
-   border-right: 1px solid #5E5E5E;    /* Разделитель транскрипции и цветов сайта */
-   /*background-color: ;    фоновый цвет*/
-}
+
 #site-color { /* Блок выбора цветов сайта */ } 
 table.color_scheme { /* Таблица с выбором цвета сайта*/ 
 /*  width: 100%;*/

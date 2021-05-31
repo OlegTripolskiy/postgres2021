@@ -26,7 +26,7 @@ header {   /* --- Стили ВСЕГО раздела HEADER */
   padding: 3px;
   text-align: center;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /*  позволяет при недостатке места переносить блоки вниз */ 
 }
 header h1 { /* --- Стили логотипа */
   font-size: 20px;
@@ -42,6 +42,7 @@ header h1 { /* --- Стили логотипа */
    text-align: left; /* Выравнивание слева - так красивее */
 }
 #site-color { /* Блок выбора цветов сайта */}
+
 
 /*  --- ТАБЛИЦА:  ВЫБОР ЦВЕТА САЙТА ---- */
 table.color_scheme {        /* стиль таблицы */
@@ -61,9 +62,9 @@ table.color_scheme td a {  /* В ячейке ссылка, при клике JS
   }  
 
 /* --- Основные цвета сайта расположенные в правом меню (td и идентификатор Д.Б. без пробела)--- */
-td#color_grey {background-color: #D0D0D0;}  /* D0D0D0*/ 
-td#color_brown {background-color: #F3E6BD;}  /* brown*/ 
-td#color_night {background-color: #3C393A;}  
+#color_grey {background-color: #D0D0D0;}  /* D0D0D0*/ 
+#color_brown {background-color: #F3E6BD;}  /* brown*/ 
+#color_night {background-color: #3C393A;}  
 
 /*  ======== СТИЛИ ГЛАВНОЕ МЕНЮ 2020  =====================  */
 #m-menu {  /* --- Контейнер главного меню */
@@ -239,7 +240,7 @@ footer { /* --- ПОДВАЛ */
     display: none;
   }
   article {width: 100%;} /* Ширина 100% */
-  #left-right {display: none;} /* убираю панель управленя САЙДБАРА (слева - справа) */
+  /* #left-right {display: none;} убираю панель управленя САЙДБАРА (слева - справа) */
   .toc ol li  {margin-bottom: 3px;}  /* Увеличиваем высоту ссылок в ОГЛАВЛЕНИИ */
   .toc ol li a {font-size: 100%;}
 } /* Конец media max-widht 20cm */
