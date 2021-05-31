@@ -187,7 +187,7 @@ article { /* --- ОСНОВНАЯ (средняя) ЧАСТЬ сайта */
 .toc_h {
   text-align: center;
   font-weight: bold;
-  margin-top: 5px;
+  margin-top: 15px;
   margin-bottom: 3px;
   background-color: #759498; /* был #7D7D7D*/
   color: #E7E7E7; /* Раньше был белый, но сильно контрастно */
@@ -277,6 +277,9 @@ footer { /* --- ПОДВАЛ */
 .list-a { /* нумерованный список буквами */
   list-style-position: outside;
   list-style-type: upper-alpha;
+  margin-top: 0;
+  margin-left: 10px;
+  padding-left: 20px;
 }
 .list-a li {
   padding-bottom: 5px;
