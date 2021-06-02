@@ -200,10 +200,10 @@ article { /* --- ОСНОВНАЯ (средняя) ЧАСТЬ сайта */
 }
 /* ПАРАГРАФ СТАТЬИ */
 .toc_p {
-  text-align: justify;
-  text-indent: 3%;
-  margin-top: 2px;
-  margin-bottom: 2px;
+  /*text-align: justify;  Выравнивание текста по всей ширине */
+  /*text-indent: 3%;   Отступ слева первой строки */
+   /*margin-top: 2px; */
+/*  margin-bottom: 2px;*/
   /*position: relative;  Тогда смогу использовать jquery posdition для ::after */
 }
      
@@ -266,29 +266,84 @@ footer { /* --- ПОДВАЛ */
 } /* === Конец ОГЛАВЛЕНИЯ СТРАНИЦЫ  */
 
 
-/* Я ДОБАВИЛ 27.05.2021 Форматирование SQL */
-.my {
+
+/* 6. ==== НАЧАЛО. ФОРМАТИРОВАНИЕ ТЕКСТА В СТАТЬЯХ  ====================*/
+  /* --- 6.1. НАЧАЛО Форматирование PostgreSQL */
+.my { /* СТИЛЬ позволяющий дополнительно форматировать highlight.js */
   font-size: 10pt; 
   font-family: Consolas, Monaco, monospace;
   width: 98%;
+  white-space: pre; /* Горизонтальная полоса прокрутки ЕСЛИ код не вмещается */
+  resize: vertical;  /* Пользователь может изменять размеры блока вертикально */
 /*  color: aqua; НЕЛЬЗЯ т.к. МЕНЯЕТ цвет в других блоках */
 }
+  /* --- 6.1. КОНЕЦ ФОРМАТИРОВАНИЯ PostgreSQL --- */
 
-/* 6. ==== НАЧАЛО ФОРМАТИРОВАНИЕ ТЕКСТА ПАРАГРАФОВ  ====================*/
-.list-a { /* нумерованный список буквами */
-  list-style-position: outside;
-  list-style-type: upper-alpha;
+  /* --- 6.2. НАЧАЛО Форматирование HTML-элементов --- */
+ol {  /* Стандартный список */
+  list-style-position: outside; /* Буква списка снаружи блока текста */
   margin-top: 0;
   margin-left: 10px;
   padding-left: 20px;
+  list-style-type: upper-alpha; /* Буква БОЛЬШАЯ */
 }
-.list-a li {
-  padding-bottom: 5px;
-}
-.justif {
-  text-align: justify;
+ol li {
+  padding-bottom: 5px; /* Расстояние по вертикали между  элементами */
 }
 
+/* Эти стили ПЕРЕОПРЕДЕЛЯЮТ стандартный список добавлением стиля */
+.list-1 {
+  list-style-type: decimal; /* маркеры - буквы латинские строчные*/
+}
+.list-a {
+  list-style-type: lower-latin; /* маркеры - буквы латинские строчные*/
+}
+.list- {
+  list-style-type: disc; /*  маркеры - кружки  */
+}
+.list- li {
+  padding-bottom: 0px; /* Расстояние по вертикали между  элементами */
+}
+
+p { /* ВСЕ ПАРАГРАФЫ. Чтобы не делать стандартное выравнивание  */
+  text-indent: 3%;  /* Отступ слева первой строки */
+  text-align: justify; /* Выравнивание текста по всей ширине */
+  margin-top: 2px;  /**/
+  margin-bottom: 2px;
+}
+
+  /* --- 6.2. НАЧАЛО Форматирование HTML-элементов --- */
+    /* Таблица  standart  */
+.standart {
+  width: 50%;
+  border-collapse: collapse; 
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.standart th {
+  background: #526799;
+  font-weight: bold;
+  padding: 5px;
+  border: 1px solid black;
+  color: #FFB871; 
+}
+.standart td {
+  padding: 5px;
+  border: 1px solid black;
+}
+.standart td:nth-child(1) {
+  width: 15%;
+  text-align: right;
+}.standart td:nth-child(2) {
+  width: 60%;
+  text-align: left;
+}
+.standart td:nth-child(3) {
+  width: 25%;
+  text-align: center;
+}
+
+    /* КОНЕЦ Таблица standart */
 /* 6. ==== КОНЕЦ ФОРМАТИРОВАНИЕ ТЕКСТА ПАРАГРАФОВ  ====================*/
 
 /* === 5. КОНЕЦ  ======= */
