@@ -282,8 +282,10 @@ footer { /* --- ПОДВАЛ */
   /* --- 6.2. НАЧАЛО Форматирование HTML-элементов --- */
 ol {  /* Стандартный список */
   list-style-position: outside; /* Буква списка снаружи блока текста */
-  margin-top: 0;
-  margin-left: 10px;
+  margin: 2%;
+  margin-top: 2px;
+/*  margin-top: 0;*/
+/*  margin-left: 10px;*/
   padding-left: 20px;
   list-style-type: upper-alpha; /* Буква БОЛЬШАЯ */
 }
@@ -318,14 +320,12 @@ p { /* ВСЕ ПАРАГРАФЫ. Чтобы не делать стандарт�
   width: 50%;
   border-collapse: collapse; 
   margin-bottom: 20px;
-  margin-left: 20px;
 }
 .standart th {
   background: #526799;
   font-weight: bold;
   padding: 5px;
   border: 1px solid black;
-  color: #FFB871; 
 }
 .standart td {
   padding: 5px;
@@ -335,11 +335,11 @@ p { /* ВСЕ ПАРАГРАФЫ. Чтобы не делать стандарт�
   width: 15%;
   text-align: right;
 }.standart td:nth-child(2) {
-  width: 60%;
+  width: 50%;
   text-align: left;
 }
 .standart td:nth-child(3) {
-  width: 25%;
+  width: 35%;
   text-align: center;
 }
 
