@@ -317,7 +317,7 @@ p { /* ВСЕ ПАРАГРАФЫ. Чтобы не делать стандарт�
   /* --- 6.2. НАЧАЛО Форматирование HTML-элементов --- */
     /* Таблица  standart  */
 .standart {
-  width: 50%;
+  width: 70%;
   border-collapse: collapse; 
   margin-bottom: 20px;
 }
@@ -335,11 +335,11 @@ p { /* ВСЕ ПАРАГРАФЫ. Чтобы не делать стандарт�
   width: 15%;
   text-align: right;
 }.standart td:nth-child(2) {
-  width: 50%;
+  width: 45%;
   text-align: left;
 }
 .standart td:nth-child(3) {
-  width: 35%;
+  width: 40%;
   text-align: center;
 }
 
